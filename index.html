@@ -1,1 +1,56 @@
-<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width"><title>Qin Zeng</title><style>body{margin:0;padding:0;width:100vw;height:100vh;display:flex;justify-content:center;align-items:center;background:#000;color:#0f0;}code{font-family:Courier;font-size:16px;line-height:20px;}</style></head><body><code>~ > whoami<br/>qinzeng</code></body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <title>Qin Zeng</title>
+    <style>
+      body{margin:0;padding:0;width:100vw;height:100vh;display:flex;justify-content:center;align-items:center;background:#000;color:#0f0;transition:background .12s linear;}
+      code{font-family:Courier;font-size:16px;line-height:20px;transition: color .12s linear;
+      }
+    </style>
+  </head>
+  <body>
+    <code>~ > whoami<br/>qinzeng</code>
+
+    <script>
+      function hsbToHsl(h, s, b){
+        let l = (2 - s) * b / 2;
+
+        if (l != 0) {
+          if (l == 1) {
+            s = 0;
+          } else if (l < 0.5) {
+            s = s * b / (l * 2);
+          } else {
+            s = s * b / (2 - l * 2);
+          }
+        }
+
+        return [h, s, l];
+      }
+
+      function randomColor() {
+        const h = Math.round(Math.random() * 360);
+        const s = Math.random();
+        const b = Math.random();
+
+        const hsl = hsbToHsl(h, s, b);
+        const bgColor = `hsl(${hsl[0]}, ${hsl[1] * 100}%, ${hsl[2] * 100}%)`;
+        const codeColor = `hsl(${hsl[0]}, ${(1 - hsl[1]) * 100}%, ${(1 - hsl[2]) * 100}%)`;
+        body.style.backgroundColor = bgColor;
+        code.style.color = codeColor;
+      }
+
+      const body = window.document.body;
+      const code = window.document.querySelector('code');
+
+      window.document.addEventListener('mousemove', () => {
+        randomColor();
+      });
+
+      setInterval(() => {
+        randomColor();
+      }, 5000);
+    </script>
+  </body>
+</html>
