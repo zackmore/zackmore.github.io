@@ -5,8 +5,7 @@
     <title>Qin Zeng</title>
     <style>
       body{margin:0;padding:0;width:100vw;height:100vh;display:flex;justify-content:center;align-items:center;background:#000;color:#0f0;transition:background 5s linear;}
-      code{font-family:Courier;font-size:16px;line-height:20px;transition: color 5s linear;
-      }
+      code{font-family:Courier;font-size:16px;line-height:20px;transition: color 5s linear;}
     </style>
   </head>
   <body>
@@ -29,7 +28,7 @@
         return [h, s, l];
       }
 
-      function randomColor() {
+      function changeColor() {
         const h = Math.round(Math.random() * 360);
         const s = Math.random();
         const b = Math.random();
@@ -45,11 +44,11 @@
       const code = window.document.querySelector('code');
 
       window.document.addEventListener('mousemove', () => {
-        randomColor();
+        changeColor();
       });
 
       setInterval(() => {
-        randomColor();
+        changeColor();
       }, 5000);
     </script>
   </body>
