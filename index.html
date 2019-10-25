@@ -43,11 +43,11 @@
       const body = window.document.body;
       const code = window.document.querySelector('code');
 
-      window.document.addEventListener('mousemove', () => {
+      global.document.addEventListener('mousemove', () => {
         changeColor();
       });
 
-      setInterval(() => {
+      global.setInterval(() => {
         changeColor();
       }, 5000);
     </script>
