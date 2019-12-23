@@ -43,7 +43,7 @@ https://book.douban.com/subject/1089142/
 
 - 非占有 —— 与物不是占有关系，而是与物互相行为之间的存在关系（体验）
 - 非享受 —— 必要的需求：衣食住行，够的程度，消费适度
-- 非错误自我认同 —— you are not what you shopped。自我存在的意义（体验）
+- 非错误自我认同 —— you are not what you buy。自我存在的意义（体验）
 
 ---
 
