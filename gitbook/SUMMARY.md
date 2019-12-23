@@ -1,6 +1,8 @@
 # Summary
 
 * [⭕ Intro](README.md)
+* [🚀 Programming](Programming/README.md)
+  * [📖 Professor Frisby's Mostly Adequate Guide to Functional Programming](Programming/fp-javascript.md)
 * [🏛 Philosophy](Philosophy/README.md)
   * [💰 消费主义](Philosophy/consumerism.md)
 * [樂 Music](Music/README.md)

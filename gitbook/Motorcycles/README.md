@@ -1,6 +1,6 @@
 # Motorcycles
 
-How-to.
+Be safe, be happy.
 
 ---
 
