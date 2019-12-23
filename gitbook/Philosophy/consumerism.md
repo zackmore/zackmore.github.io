@@ -1,28 +1,31 @@
 # 消费主义
 
-## 消费主义
+## 无节制消费的元凶
+
+https://movie.douban.com/subject/25945379/
+
 
 **非必需品**
 
-- 商品
+- Commodity
 
 **必需品**
 
-- health
-- education
-- self understanding
-- beautiful cities
-- rewarding social lives
+![Must Have](../assets/must-have.png)
 
 判别必需/非必需，不是简单的二元论。
 
-more for self less for others, buy; more for others less for self, do not buy.
+more for self less for others, buy;  
+more for others less for self, do not buy.
 
-new consumerism: focus on buying and selling service and goods for higher needs
+new consumerism:  
+focus on buying and selling service and goods for higher needs
 
 ---
 
-## 贫穷陷阱
+## 贫穷的本质
+
+https://book.douban.com/subject/21966353/
 
 - 认知差异
 - 健康：预防优于治疗
