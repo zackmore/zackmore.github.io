@@ -1,0 +1,491 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>📖 [WIP] Making reliable distributed systems in the presence of software errors · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Philosophy/" />
+    
+    
+    <link rel="prev" href="fp-javascript.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    ⭕ Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    🚀 Programming
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="fp-javascript.html">
+            
+                <a href="fp-javascript.html">
+            
+                    
+                    📖 Professor Frisby's Mostly Adequate Guide to Functional Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="armstrong-thesis-2003.html">
+            
+                <a href="armstrong-thesis-2003.html">
+            
+                    
+                    📖 [WIP] Making reliable distributed systems in the presence of software errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Philosophy/">
+            
+                <a href="../Philosophy/">
+            
+                    
+                    🏛 Philosophy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Philosophy/consumerism.html">
+            
+                <a href="../Philosophy/consumerism.html">
+            
+                    
+                    💰 消费主义
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Music/">
+            
+                <a href="../Music/">
+            
+                    
+                    樂 Music
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Motorcycles/">
+            
+                <a href="../Motorcycles/">
+            
+                    
+                    🏍 Motorcycles
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Motorcycles/sport-riding-techniques.html">
+            
+                <a href="../Motorcycles/sport-riding-techniques.html">
+            
+                    
+                    📖 Sport Riding Techniques
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Motorcycles/a-twist-of-the-wrist-1.html">
+            
+                <a href="../Motorcycles/a-twist-of-the-wrist-1.html">
+            
+                    
+                    📖 [WIP] A Twist of the Wrist 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Motorcycles/offroad.html">
+            
+                <a href="../Motorcycles/offroad.html">
+            
+                    
+                    🔗 How to ride a motorcycle off-road
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >📖 [WIP] Making reliable distributed systems in the presence of software errors</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="making-reliable-distributed-systems-in-the-presence-of-software-errors">Making reliable distributed systems in the presence of software errors</h1>
+<p><a href="https://erlang.org/download/armstrong_thesis_2003.pdf" target="_blank">https://erlang.org/download/armstrong_thesis_2003.pdf</a></p>
+<p><strong>Definition of an architecture</strong></p>
+<ul>
+<li>A problem domain<blockquote>
+<p>What type of problem is the architecture designed to solve? Sodware architectures are not general purpose but are designed for solving speci&#xFB01;c problems.</p>
+</blockquote>
+</li>
+<li>A philosophy<blockquote>
+<p>What is the reasoning behind the method of sodware construction? What are the central ideas in the architecture?</p>
+</blockquote>
+</li>
+<li>A set of construction guidelines<blockquote>
+<p>How do we program a system? We need an explicit set of construction guidelines. Our systems will be written and maintained by teams of programmers&#x2014;it is important that all the programmers, and system designers, understand the system architecture, and its underlying philosophy.</p>
+</blockquote>
+</li>
+<li>A set of pre-defined components<blockquote>
+<p>Design by &#x201C;choosing from a set of pre-de&#xFB01;ned components&#x201D; is far easier than &#x201C;design from scratch.&#x201D;</p>
+</blockquote>
+</li>
+<li>A way of describing things<blockquote>
+<p>How can we describe the interfaces to a component? How can we describe a communication protocol between two components in our system? How can we describe the static and dynamic structure of our system? To answer these questions we will introduce a number of dicerent, and specialised notations. Some for describing program APIs, and other notations for describing protocols, and system structure.</p>
+</blockquote>
+</li>
+<li>A way of configuring things<blockquote>
+<p>How can we start, stop, and con&#xFB01;gure, the system. How can we re-con&#xFB01;gure the system while it is in operation?</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>Problem domain(for Erlang, for telecommunication)</strong></p>
+<p>Requirements:</p>
+<ol>
+<li>The system must be able to handle very large numbers of concurrent activities.</li>
+<li>Actions must be performed at a certain point in time or within a certain time.</li>
+<li>Systems may be distributed over several computers.</li>
+<li>The system is used to control hardware.</li>
+<li>The sodware systems are very large.</li>
+<li>The system exhibits complex functionality such as, feature interaction.</li>
+<li>The systems should be in continuous operation for many years.</li>
+<li>Sodware maintenance (recon&#xFB01;guration, etc) should be performed without stopping the system.</li>
+<li>There are stringent quality, and reliability requirements.</li>
+<li>Fault tolerance both to hardware failures, and sodware errors, must be provided.</li>
+</ol>
+<p>Motivate to:</p>
+<ul>
+<li>Concurrency</li>
+<li>Soft real-time</li>
+<li>Distributed</li>
+<li>Hardware interaction</li>
+<li>Large sodware systems</li>
+<li>Complex functionality</li>
+<li>Continuous operation</li>
+<li>Quality requirements</li>
+<li>Fault tolerance</li>
+</ul>
+<p><strong>Philosophy</strong></p>
+<p>To make a fault-tolerant software system which behaves reasonably in the presence of sodware errors we proceed as follows:</p>
+<ol>
+<li><p>We organise the sodware into a hierarchy of tasks that the system has to perform. Each task corresponds to the achievement of a number of goals. The sodware for a given task has to try and achieve the goals associated with the task.</p>
+<p>Tasks are ordered by complexity. The top level task is the most complex, when all the goals in the top level task can be achieved then the system should function perfectly. Lower level tasks should still allow the system to function in an acceptable manner, though it may ocer a reduced level of service.</p>
+<p>The goals of a lower level task should be easier to achieve than the goals of a higher level task in the system.</p>
+</li>
+<li>We try to perform the top level task.</li>
+<li>If an error is detected when trying to achieve a goal, we make an attempt to correct the error. If we cannot correct the error we immediately abort the current task and start performing a simpler task.</li>
+</ol>
+<p><strong>Concurrency oriented programming</strong></p>
+<p>The vast majority of programming languages are essentially sequential; any concurrency in the language is provided by the underlying operating system, and not by the programming language.</p>
+<p>In this thesis I present a view of the world where concurrency is provided by the programming language, and not by the underlying operating system. Languages which have good support for concurrency I call Concurrency Oriented Languages.</p>
+<p><strong>Programming by observing the real world</strong></p>
+<p>We often want to write programs that model the world or interact with the world.</p>
+<ol>
+<li>We identify all the truly concurrent activities in our real world activity.</li>
+<li>We identify all message channels between the concurrent activities.</li>
+<li>We write down all the messages which can &#xFB02;ow on the dicerent message channels.</li>
+</ol>
+<p>The structure of the program should exactly follow the structure of the problem. Each real world concurrent activity should be mapped onto exactly one concurrent process in our programming language. If there is a 1:1 mapping of the problem onto the program we say that the program is isomorphic to the problem.</p>
+<p>It is extremely important that the mapping is exactly 1:1. The reason for this is that it minimizes the conceptual gap between the problem and the solution. If this mapping is not 1:1 the program will quickly degenerate, and become diecult to understand. This degeneration is oden observed when non-CO languages are used to solve concurrent problems. Oden the only way to get the program to work is to force several independent activities to be controlled by the same language thread or process. This leads to a inevitable loss of clarity, and makes the programs subject to complex and irreproducible interference errors.</p>
+<p><strong>Characteristics of a COPL</strong></p>
+<ol>
+<li>COPLs must support processes. A process can be thought of as a self-contained virtual machine.</li>
+<li>Several processes operating on the same machine must be strongly isolated. A fault in one processe should not adversely ecect another process, unless such interaction is explicitly programmed.</li>
+<li>Each process must be identi&#xFB01;ed by a unique unforgeable identi&#xFB01;er. We will call this the Pid of the process.</li>
+<li>There should be no shared state between processes. Processes interact by sending messages. If you know the Pid of a process then you can send a message to the process.</li>
+<li>Message passing is assumed to be unreliable with no guarantee of delivery.</li>
+<li>It should be possible for one process to detect failure in another process. We should also know the reason for failure.</li>
+</ol>
+<p>Note that COPLs must provide true concurrency, thus objects represented as processes are truly concurrent, and messages between processes are true asynchronous messages, unlike the disguised remote procedure calls found in many object-oriented languages.</p>
+<p>Note also that the reason for failure may not always be correct. For example, in a distributed system, we might receive a message informing us that a process has died, when in fact a network error has occurred.</p>
+<p><strong>Process isolation</strong></p>
+<p>The notion of isolation is central to understanding COP, and to the construction of fault-tolerant sodware. Two processes operating on the same machine must be as independent as if they ran on physically separated machines.</p>
+<p>Indeed the ideal architecture to run a CO program on would be a machine which assigned one new physical processor per sodware process. Until this ideal is reached we will have to live with the fact that multiple processes will run on the same machine. We should still think of them as if they ran on physically separated machine.</p>
+<p>Isolation has several consequences:</p>
+<ol>
+<li>Processes have &#x201C;share nothing&#x201D; semantics. This is obvious since they are imagined to run on physically separated machines.</li>
+<li>Message passing is the only way to pass data between processes. Again since nothing is shared this is the only means possible to exchange data.</li>
+<li>Isolation implies that message passing is asynchronous. If process communication is synchronous then a sodware error in the receiver of a message could inde&#xFB01;nitely block the sender of the message destroying the property of isolation.</li>
+<li>Since nothing is shared, everything necessary to perform a distributed computation must be copied. Since nothing is shared, and the only way to communicate between processes is by message passing, then we will never know if our messages arrive (remember we said that message passing is inherently unreliable.) The only way to know if a message has been correctly sent is to send a con&#xFB01;rmation message back.</li>
+</ol>
+<p><strong>Names of processes</strong></p>
+<p>We require that the names of processes are unforgeable. We will assume that processes know their own names, and that processes which create other processes know the names of the processes which they have created. In other words, a parent process knows the names of its children.</p>
+<p>If we know the name of a process, we can send a message to that process. If we do not know the name of a process we cannot interact with it in any way, thus the system is secure. Once the names of processes become widely know the system becomes less secure. We call the process of revealing names to other processes in a controlled manner the <em>name distribution problem</em> &#x2014; the key to security lies in the name distribution problem. When we reveal a Pid to another process we will say that we have published the name of the process. If a name is never published there are no security problems.</p>
+<p>Thus knowing the name of a process is the key element of security. Since names are unforgeable the system is secure only if we can limit the knowledge of the names of the processes to trusted processes.</p>
+<p><strong>Message passing</strong></p>
+<p>rules:</p>
+<ol>
+<li>Message passing is assumed to be atomic which means that a message is either delivered in its entirety or not at all.</li>
+<li>Message passing between a pair of processes is assumed to be ordered meaning that if a sequence of messages is sent and received between any pair of processes then the messages will be received in the same order they were sent.</li>
+<li>Messages should not contain pointers to data structures contained within processes&#x2014;they should only contain constants and/or Pids.</li>
+</ol>
+<p>Note that point two is a design decision, and does not re&#xFB02;ect any underlying semantics in the network used to transmit messages. The underlying network might reorder the messages, but between any pair of processes these messages can be bucered, and re-assembled into the correct order before delivery. This assumption makes programming message passing applications much easier than if we had to always allow for out of order messages.</p>
+<p>We say that such message passing has send and pray semantics. We send the message and pray that it arrives. Con&#xFB01;rmation that a message has arrived can be achieved by returning a con&#xFB01;rmation message.</p>
+<p>Message passing is also used for synchronisation. Suppose we wish to synchronise two processes A, and B. If A sends a message to B then B can only receive this message at some point in time ader A has sent the message. This is known as casual ordering in distributed systems theory.</p>
+<p><strong>Protocols</strong></p>
+<p>Isolation of components, message passing between components, sufficient for protecting a system from the consequences of a software error, but not sufficient to specify the behaviour of a system, no in the event of some kind of failure to determinen which component has failed.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="fp-javascript.html" class="navigation navigation-prev " aria-label="Previous page: 📖 Professor Frisby's Mostly Adequate Guide to Functional Programming">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Philosophy/" class="navigation navigation-next " aria-label="Next page: 🏛 Philosophy">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"📖 [WIP] Making reliable distributed systems in the presence of software errors","level":"1.2.2","depth":2,"next":{"title":"🏛 Philosophy","level":"1.3","depth":1,"path":"Philosophy/README.md","ref":"Philosophy/README.md","articles":[{"title":"💰 消费主义","level":"1.3.1","depth":2,"path":"Philosophy/consumerism.md","ref":"Philosophy/consumerism.md","articles":[]}]},"previous":{"title":"📖 Professor Frisby's Mostly Adequate Guide to Functional Programming","level":"1.2.1","depth":2,"path":"Programming/fp-javascript.md","ref":"Programming/fp-javascript.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Programming/armstrong-thesis-2003.md","mtime":"2019-12-25T01:12:58.352Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-25T01:14:13.341Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
