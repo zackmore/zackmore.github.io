@@ -4,7 +4,9 @@ Meta knowledges.
 
 ---
 
-## 时间线 - [《20 世纪思想史》](https://book.douban.com/subject/34449288/)
+## 时间线 - 《20 世纪思想史》
+
+https://book.douban.com/subject/34449288/
 
 ### 达尔文
 
@@ -18,7 +20,7 @@ Meta knowledges.
 
 介绍
 
-- [弗洛伊德传](https://book.douban.com/subject/26348833/)
+- 弗洛伊德传 https://book.douban.com/subject/26348833/
 
 作品
 

@@ -10,7 +10,7 @@ https://movie.douban.com/subject/25945379/
 
 **必需品**
 
-![Must Have](../assets/must-have.png)
+![Must Have](../../assets/must-have.png)
 
 判别必需/非必需，不是简单的二元论。
 
