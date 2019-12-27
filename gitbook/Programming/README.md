@@ -1,3 +1,0 @@
-# Programming
-
-Talk with computers.
