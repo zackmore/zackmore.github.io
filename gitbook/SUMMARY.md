@@ -5,7 +5,7 @@
   * [🚀 Programming](Thoughts/Programming/README.md)
   * [🏍 Motorcycles](Thoughts/Motorcycles/README.md)
 * [📖 笔记](Notes/README.md)
-  * 🏛 Philosophy
+  * [🏛 Philosophy](Notes/Philosophy/README.md)
     * [💰 消费主义](Notes/Philosophy/consumerism.md)
   * 🚀 Programming
     * [📖 Professor Frisby's Mostly Adequate Guide to Functional Programming](Notes/Programming/fp-javascript.md)
